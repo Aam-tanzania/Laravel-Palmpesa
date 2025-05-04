@@ -1,5 +1,5 @@
 {
-  "name": "Anord/palmpesa-payment",
+  "name": "anord/palmpesa-payment",
   "description": "A Laravel package for handling PalmPesa payments including USSD Push and Pay-by-Link.",
   "type": "library",
   "license": "MIT",
