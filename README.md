@@ -28,7 +28,7 @@ Here's a simple and professional `README.md` file for your Laravel PalmPesa paym
 ### Via Composer (Packagist - if published)
 
 ```bash
-composer require anord/laravel-palmpesa
+composer require palmpesa/laravel-palmpesa
 ```
 ````
 
@@ -50,7 +50,7 @@ Add this to your Laravel project's `composer.json`:
 Then install:
 
 ```bash
-composer require anord/laravel-palmpesa
+composer require palmpesa/laravel-palmpesa
 ```
 
 ---
