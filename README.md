@@ -1,4 +1,4 @@
-Here's a simple and professional `README.md` file for your Laravel PalmPesa payment package:
+Palm pesa laravel simple package 
 
 ---
 
