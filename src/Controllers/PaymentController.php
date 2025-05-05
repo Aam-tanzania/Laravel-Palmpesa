@@ -67,7 +67,7 @@ class PaymentController extends Controller
             // 🔁 Check payment status inline
             try {
                 $orderStatusResponse = Http::withHeaders([
-                    'Authorization' => 'Bearer UgGnf1bYJb1vC8MoZXa7LDXcWS6sA7mxWR12MaPgr05kDowvakyzP6jBLsbs',
+                    'Authorization' => env('PALMPESA_API_KEY'),
                     'Accept'        => 'application/json',
                     'Content-Type'  => 'application/json',
                 ])->post('https://palmpesa.drmlelwa.co.tz/api/order-status', [

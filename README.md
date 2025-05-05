@@ -75,7 +75,10 @@ php artisan vendor:publish --tag=palmpesa-config
 
 ### env. add this line as it is in your .env file
 
+
 PALMPESA_VENDOR_ID=TILL61103867
+
+PALMPESA_API_KEY =Bearer {put your Api token from palmpesa dashboard} 
 ```
 
 ---
