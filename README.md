@@ -73,7 +73,8 @@ In `config/app.php`:
 php artisan vendor:publish --tag=palmpesa-config
 ```
 
-```env: add this line as it is in your .env file
+### env. add this line as it is in your .env file
+
 PALMPESA_VENDOR_ID=TILL61103867
 ```
 
