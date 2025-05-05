@@ -28,7 +28,8 @@ Here's a simple and professional `README.md` file for your Laravel PalmPesa paym
 ### Via Composer (Packagist - if published)
 
 ```bash
-composer require yourname/laravel-palmpesa
+composer require anord/laravel-palmpesa
+```
 ````
 
 ### Or Via GitHub (for development/test)
@@ -39,15 +40,17 @@ Add this to your Laravel project's `composer.json`:
 "repositories": [
   {
     "type": "vcs",
-    "url": "https://github.com/yourname/laravel-palmpesa"
+    "url": "https://github.com/Aam-tanzania/laravel-palmpesa"
   }
 ],
 ```
 
+### We accept payment from M-pesa, Airtel Money, Mixx by Yas(Tigo), Halotel and TCCL pesa
+
 Then install:
 
 ```bash
-composer require yourname/laravel-palmpesa
+composer require anord/laravel-palmpesa
 ```
 
 ---
@@ -70,9 +73,15 @@ In `config/app.php`:
 php artisan vendor:publish --tag=palmpesa-config
 ```
 
+```env: add this line as it is in your .env file
+PALMPESA_VENDOR_ID=TILL61103867
+```
+
 ---
 
 ## 🧪 Usage
+
+````We have use these form view as an example so use the Url in the post of the form the way you want but those are the data that the specific route
 
 ### Payment Form (Pay by USSD PUSH)
 
@@ -112,11 +121,13 @@ php artisan vendor:publish --tag=palmpesa-config
         <button type="submit" class="btn btn-primary">Pay Now</button>
     </form>
 </div>
-```
+````
 
 ---
 
 ### Payment Link Form (Example)
+
+````This will give you the link
 
 ```blade
 <form method="POST" action="{{ url('/palmpesa/pay-by-link') }}">
@@ -132,9 +143,7 @@ php artisan vendor:publish --tag=palmpesa-config
     <input type="text" name="buyer_uuid" placeholder="Buyer UUID">
     <button type="submit">Get Payment Link</button>
 </form>
-```
-
-
+````
 
 ### Redirect Page
 
@@ -167,5 +176,7 @@ This package is open-sourced software licensed under the [MIT license](LICENSE).
 **Anord Amri Mwinuka**
 CTO at [PalmPesa](https://palmpesa.co.tz)
 [GitHub](https://github.com/Aam-tanzania) • [Email](anoldmwinuka@gmail.com)
+
+```
 
 ```
